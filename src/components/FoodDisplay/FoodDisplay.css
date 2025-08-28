@@ -1,0 +1,19 @@
+.food-display {
+  margin-top: 30px;
+}
+
+.food-display h2 {
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  text-align: center;
+}
+
+.food-display h2 span {
+  color: var(--color-primary);
+}
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}

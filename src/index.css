@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-primary: #ff6000; /* brand/orange */
+  --color-main-text: #2a2a2a; /* heading/body */
+  --color-muted-text: #939393; /* secondary text */
+  --color-white: #ffffff; /* white */
+  --color-bg: #ffefe6; /* optional soft background you used */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.sides-gap {
+  padding-left: 70px !important;
+  padding-right: 70px !important;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Baloo Bhai 2", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 1700px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sides-gap {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}

@@ -1,0 +1,225 @@
+.login-popup {
+  display: flex;
+  justify-content: space-between;   /* center align */
+  align-items: start;
+  gap: 5%;                   /* gap between img & content */
+  width: 100%;
+  min-height: 100vh;         /* full height */
+}
+
+.login-img {
+  width: 50%;
+}
+
+.login-img img {
+  width: 100%;
+  height: 100vh;    
+  object-fit: cover;  
+  display: block;
+}
+
+.login-content {
+  width: 43%;
+  padding: 25px 0;
+}
+
+.login-title {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 150px;
+}
+
+.login-title .login-btn {
+  background: none;
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.Login-container h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.login-inputs span {
+  color: var(--color-muted-text);
+  font-size: .9rem;
+}
+
+.login-inputs .input {
+  padding: 10px 100px 10px 5px;
+  width: 300px;
+  border: none;
+  transition: all .3s ease;
+  outline-color: var(--color-primary);
+  outline: none;
+  font-size: 1rem;
+  background: none;
+}
+
+.login-inputs input::placeholder {
+  color: rgba(56, 56, 56, 0.877);
+  font-weight: 600;
+}
+
+.Login-container .login-btn1 {
+  width: 300px;
+}
+
+.login-condition {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  align-items: start;
+}
+
+.login-condition input{
+  margin-top: 5px;
+}
+.login-condition p {
+  font-size: .9rem;
+  color: var(--color-muted-text);
+}
+
+.login-flip {
+  margin-top: 30px;
+  color: rgba(56, 56, 56, 0.877);
+}
+
+.login-flip span {
+  color: var(--color-primary);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ========================= */
+/* 📱 Tablet Responsive */
+/* ========================= */
+@media (max-width: 1024px) {
+  .login-popup {
+    gap: 2%;
+  }
+
+  .login-title {
+    padding-right: 50px;
+  }
+
+  .login-content {
+    width: 50%;
+    padding: 20px;
+  }
+}
+
+/* ========================= */
+/* 📱 Mobile Responsive with Background Image */
+/* ========================= */
+@media (max-width: 768px) {
+  .login-popup {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh; 
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  /* hide normal img column */
+  .login-img {
+    display: none;
+  }
+
+  /* blurred background image */
+  .login-popup::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../assets/Images/Login.png") no-repeat center center/cover;
+    filter: blur(4px);
+    transform: scale(1.1);  /* avoid blur edges */
+    z-index: 1;
+  }
+
+  /* dark overlay */
+  .login-popup::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.281);
+    z-index: 2;
+  }
+
+  .login-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--color-bg);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);    
+  }
+
+  .login-title {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+ .login-inputs .input {
+   padding: 10px 0px 10px 5px;
+   border: none;
+   transition: all .3s ease;
+   outline-color: var(--color-primary);
+   outline: none;
+   font-size: 1rem;
+   width: 275px;
+  }
+  .Login-container .login-btn1 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ========================= */
+/* 📱 Small Mobile */
+/* ========================= */
+@media (max-width: 480px) {
+  .Login-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .login-inputs {
+    gap: 20px;
+  }
+
+  .login-inputs input {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .login-condition p {
+    font-size: 0.8rem;
+  }
+
+  .login-flip {
+    font-size: 0.9rem;
+  }
+}

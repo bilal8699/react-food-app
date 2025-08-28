@@ -1,0 +1,84 @@
+.AppDownload{
+  text-align: center;
+  margin: 100px 0;
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+}
+.AppDownload h2 span{
+  color: var(--color-primary);
+}
+.store-buttons {
+  display: flex;
+  gap: 20px;       /* buttons ke darmiyan gap */
+  justify-content: center; /* center align */
+  margin-top: 20px;
+}
+
+.store-buttons img {
+  height: 50px;    /* size control */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);  /* hover effect */
+}
+
+.AppDownload {
+  text-align: center;
+  margin: 100px 0;
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+}
+
+.AppDownload h2 span {
+  color: var(--color-primary);
+}
+
+.store-buttons {
+  display: flex;
+  gap: 20px;       /* buttons ke darmiyan gap */
+  justify-content: center; /* center align */
+  margin-top: 20px;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+.store-buttons img {
+  height: 50px;    /* size control */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);  /* hover effect */
+}
+
+/* ✅ Responsive styles */
+@media (max-width: 768px) {
+  .AppDownload {
+    margin: 60px 20px;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+
+  .store-buttons {
+    gap: 15px;
+  }
+
+  .store-buttons img {
+    height: 45px;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .AppDownload {
+    margin: 40px 15px;
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+
+  .store-buttons img {
+    height: 40px;
+  }
+}
