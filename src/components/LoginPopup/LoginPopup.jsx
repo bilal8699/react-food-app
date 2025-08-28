@@ -3,7 +3,7 @@ import "./LoginPopup.css";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import Button from "../Button/Button";
-import loginImg from "../../assets/Images/Login.png";
+import loginImg from "../../assets/Images/login.png";
 
 const LoginPopup = () => {
   const [currentState, setCurrentState] = useState("Login");
