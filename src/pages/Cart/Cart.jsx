@@ -3,7 +3,7 @@ import "./Cart.css";
 import { StoreContext } from "../../components/context/StoreContext";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { FaPlus, FaMinus } from "react-icons/fa";
-import Button from "../../components/Button/button";
+import Button from "../../components/Button/Button";
 import {useNavigate} from 'react-router-dom'
 
 const Cart = () => {
