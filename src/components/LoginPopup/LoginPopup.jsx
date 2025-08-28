@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./LoginPopup.css";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
-import Button from "../Button/button";
+import Button from "../Button/Button";
 import loginImg from "../../assets/Images/Login.png";
 
 const LoginPopup = () => {

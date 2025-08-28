@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 import "./NavBar.css";
 import { FiSearch, FiShoppingCart, FiMenu, FiX } from "react-icons/fi";
-import Button from "../Button/button";
+import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 import { StoreContext } from "../context/StoreContext";
 

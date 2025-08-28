@@ -7,7 +7,7 @@ import {
   FaMinus,
 } from "react-icons/fa";
 import "./FoodItem.css";
-import Button from "../Button/button";
+import Button from "../Button/Button";
 import { StoreContext } from "../context/StoreContext";
 
 const FoodItem = ({ id, name, image, price, description, highlight, setFromSearch }) => {

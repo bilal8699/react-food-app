@@ -1,5 +1,5 @@
 import "./PlaceOrder.css";
-import Button from "../../components/Button/button";
+import Button from "../../components/Button/Button";
 import React, { useContext } from "react";
 import { StoreContext } from "../../components/context/StoreContext";
 

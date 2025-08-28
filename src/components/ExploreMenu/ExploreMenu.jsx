@@ -1,7 +1,7 @@
 import React from "react";
 import "./ExploreMenu.css";
 import { items } from "../../assets/menu";
-import Button from "../Button/button";
+import Button from "../Button/Button";
 
 const ExploreMenu = ({ category, setCategory }) => {
   return (
